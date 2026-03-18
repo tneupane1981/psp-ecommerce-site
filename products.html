@@ -1,624 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop All Products | Pet Supply Plus — Everything Your Pet Needs</title>
-    <meta name="description" content="Shop our full range of pet supplies for dogs, cats, birds, fish, reptiles and small animals. Premium quality at affordable prices.">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop all pet supplies at Pet Supply Plus. Browse dog food, cat toys, bird cages, aquariums, reptile supplies, and more.">
+  <title>Shop All Products | Pet Supply Plus</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
-
-    <div class="top-bar">
-        <div class="container">
-            <span class="top-bar-left">📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST</span>
-            <div class="top-bar-right">
-                <a href="order-status.html" title="Check your order status">Track Order</a>
-                <a href="customer-service.html" title="Contact customer service">Help</a>
-                <a href="cart.html" class="cart-icon-wrapper" title="View shopping cart">
-                    🛒 Cart <span class="cart-count" aria-label="3 items in cart">3</span>
-                </a>
-                <a href="#" title="Sign in or create an account">My Account</a>
-            </div>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-brand">
+          <a href="index.html" class="site-logo">
+            <span class="logo-text">Pet Supply Plus</span>
+            <span class="logo-tagline">Everything Your Pet Needs</span>
+          </a>
         </div>
+        <div class="header-utils">
+          <a href="account.html" class="util-link" title="My Account">My Account</a>
+          <a href="cart.html" class="util-link cart-link" title="Shopping Cart">
+            Cart <span class="cart-count">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container">
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link" aria-current="page">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="customer-service.html" class="nav-link">Customer Service</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Shop All Products</h1>
+        <p class="page-intro">Over 500 products for every pet</p>
+      </div>
     </div>
 
-    <header class="site-header" role="banner">
-        <div class="container">
-            <div class="header-inner">
-                <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
-                    <span class="logo-text">Pet Supply <span>Plus</span></span>
-                    <span class="logo-tagline">Everything Your Pet Needs</span>
-                </a>
-                <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+    <!-- Filter/Sort Bar -->
+    <div class="filter-bar">
+      <div class="container">
+        <label for="filter-category">Category:</label>
+        <select id="filter-category" class="filter-select">
+          <option value="">All Categories</option>
+          <option value="dog">Dog Supplies</option>
+          <option value="cat">Cat Supplies</option>
+          <option value="bird">Bird Supplies</option>
+          <option value="fish">Fish &amp; Aquarium</option>
+          <option value="reptile">Reptile</option>
+          <option value="small">Small Animals</option>
+        </select>
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by" class="filter-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="newest">Newest First</option>
+          <option value="name">Name A–Z</option>
+        </select>
+        <label for="price-range">Price Range:</label>
+        <select id="price-range" class="filter-select">
+          <option value="">Any Price</option>
+          <option value="0-25">Under $25</option>
+          <option value="25-50">$25 – $50</option>
+          <option value="50-100">$50 – $100</option>
+          <option value="100+">$100+</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Products Grid - 12 products -->
+    <section class="section">
+      <div class="container">
+        <div class="product-grid">
+          <!-- 1 -->
+          <div class="product-card">
+            <div class="product-img product-img-dog" role="img" aria-label="Premium Dog Food Chicken and Rice 30lb bag"></div>
+            <div class="product-body">
+              <span class="product-category">Dog Supplies</span>
+              <h2 class="product-name">Premium Dog Food (Chicken &amp; Rice)</h2>
+              <p class="product-desc">High-protein formula with real chicken and brown rice. No artificial preservatives. 30 lb bag.</p>
+              <p class="product-price">$49.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
             </div>
-        </div>
-    </header>
-
-    <nav class="main-nav" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <ul class="nav-list" id="nav-list" role="list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active" aria-current="page">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="customer-service.html">Customer Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
-        <div class="container">
-            <ol class="breadcrumb-list" role="list">
-                <li><a href="index.html" title="Go to Home page">Home</a></li>
-                <li><span class="current" aria-current="page">Shop All Products</span></li>
-            </ol>
-        </div>
-    </nav>
-
-    <main id="main-content">
-        <div class="page-hero">
-            <div class="container">
-                <h1>Shop All Products</h1>
-                <p>Over 10,000 products for every pet. Free shipping on orders over $75.</p>
+          </div>
+          <!-- 2 -->
+          <div class="product-card">
+            <div class="product-img product-img-cat" role="img" aria-label="Interactive Cat Toy Set with feather wand and laser pointer"></div>
+            <div class="product-body">
+              <span class="product-category">Cat Supplies</span>
+              <h2 class="product-name">Interactive Cat Toy Set</h2>
+              <p class="product-desc">Keep your cat entertained for hours. Includes feather wand, laser pointer, and crinkle balls.</p>
+              <p class="product-price">$24.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
             </div>
-        </div>
-
-        <div class="page-content">
-            <div class="container">
-                <div class="products-layout">
-
-                    <!-- Filter Sidebar -->
-                    <aside class="filter-sidebar" aria-label="Product filters">
-                        <h3>Filter Products</h3>
-
-                        <div class="filter-group">
-                            <h4>Category</h4>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="dog" checked> Dog Supplies
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="cat" checked> Cat Supplies
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="bird" checked> Bird Supplies
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="fish" checked> Fish &amp; Aquarium
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="reptile" checked> Reptile Supplies
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="small" checked> Small Animals
-                            </label>
-                        </div>
-
-                        <div class="filter-group">
-                            <h4>Price Range</h4>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="all" checked> All Prices
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="under25"> Under $25
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="25-50"> $25 – $50
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="50-100"> $50 – $100
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="over100"> Over $100
-                            </label>
-                        </div>
-
-                        <div class="filter-group">
-                            <h4>Rating</h4>
-                            <label class="filter-option">
-                                <input type="checkbox" name="rating" value="5"> ★★★★★ (5 star)
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="rating" value="4"> ★★★★☆ (4 star+)
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="rating" value="3"> ★★★☆☆ (3 star+)
-                            </label>
-                        </div>
-
-                        <div class="filter-group">
-                            <h4>Brand</h4>
-                            <label class="filter-option">
-                                <input type="checkbox" name="brand" value="purina"> Purina
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="brand" value="royal-canin"> Royal Canin
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="brand" value="kong"> KONG
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="brand" value="petmate"> Petmate
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="brand" value="psp"> PSP Brand
-                            </label>
-                        </div>
-
-                        <button class="btn btn-teal btn-block" type="button">Apply Filters</button>
-                        <button class="btn btn-outline btn-block mt-1" type="button">Clear All</button>
-                    </aside>
-
-                    <!-- Products Main Area -->
-                    <div>
-                        <!-- Sort Controls -->
-                        <div class="sort-controls">
-                            <span>Showing <strong>24</strong> of <strong>10,482</strong> products</span>
-                            <div>
-                                <label for="sort-select">Sort by: </label>
-                                <select id="sort-select" name="sort" aria-label="Sort products by">
-                                    <option value="featured">Featured</option>
-                                    <option value="price-asc">Price: Low to High</option>
-                                    <option value="price-desc">Price: High to Low</option>
-                                    <option value="rating">Best Rated</option>
-                                    <option value="newest">Newest</option>
-                                    <option value="bestselling">Best Selling</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Dog Supplies Section -->
-                        <section aria-labelledby="dogs-heading" id="dogs">
-                            <h2 id="dogs-heading" class="faq-section-title">🐶 Dog Supplies</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder dog" role="img" aria-label="Premium Dog Food product image">
-                                        <span class="product-icon" aria-hidden="true">🐶</span>
-                                        Dog Food
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Dog</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Premium Dog Food details">Premium Dog Food (Chicken &amp; Rice)</a></h3>
-                                        <p class="product-desc">All-natural chicken &amp; rice formula, 30 lb bag. Grain-free.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(247)</span></div>
-                                        <p class="product-price">$49.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Premium Dog Food to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder dog" role="img" aria-label="Dog Leather Collar product image">
-                                        <span class="product-icon" aria-hidden="true">🐕</span>
-                                        Dog Collar
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Dog</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Dog Leather Collar details">Dog Leather Collar</a></h3>
-                                        <p class="product-desc">Premium genuine leather with quick-release buckle. Multiple sizes.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(201)</span></div>
-                                        <p class="product-price">$19.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Dog Leather Collar to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder dog" role="img" aria-label="Dog Grooming Kit product image">
-                                        <span class="product-icon" aria-hidden="true">✂️</span>
-                                        Grooming Kit
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Dog</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Dog Grooming Kit details">Dog Grooming Kit</a></h3>
-                                        <p class="product-desc">7-piece professional grooming set. Brush, comb, nail clippers &amp; more.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(134)</span></div>
-                                        <p class="product-price">$39.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Dog Grooming Kit to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder dog" role="img" aria-label="Dog Training Treats product image">
-                                        <span class="product-icon" aria-hidden="true">🦴</span>
-                                        Training Treats
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Dog</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Dog Training Treats details">Dog Training Treats</a></h3>
-                                        <p class="product-desc">Low-calorie chicken liver treats. Perfect for obedience training.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(389)</span></div>
-                                        <p class="product-price">$12.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Dog Training Treats to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                        <!-- Cat Supplies Section -->
-                        <section aria-labelledby="cats-heading" id="cats">
-                            <h2 id="cats-heading" class="faq-section-title">🐱 Cat Supplies</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder cat" role="img" aria-label="Interactive Cat Toy Set product image">
-                                        <span class="product-icon" aria-hidden="true">🐱</span>
-                                        Cat Toy Set
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Cat</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Interactive Cat Toy Set details">Interactive Cat Toy Set</a></h3>
-                                        <p class="product-desc">6-piece feather wand and laser toy set. Keeps cats active.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(183)</span></div>
-                                        <p class="product-price">$24.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Interactive Cat Toy Set to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder cat" role="img" aria-label="Cat Scratching Post Tower product image">
-                                        <span class="product-icon" aria-hidden="true">🐈</span>
-                                        Cat Tower
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Cat</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Cat Scratching Post Tower details">Cat Scratching Post Tower</a></h3>
-                                        <p class="product-desc">5-level sisal rope tower with hammock &amp; condos. 52" tall.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(412)</span></div>
-                                        <p class="product-price">$69.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Cat Scratching Post Tower to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder cat" role="img" aria-label="Premium Cat Food product image">
-                                        <span class="product-icon" aria-hidden="true">😺</span>
-                                        Cat Food
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Cat</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Premium Cat Food details">Premium Cat Food (Salmon)</a></h3>
-                                        <p class="product-desc">Wild-caught salmon formula. Grain-free, 15 lb bag.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(298)</span></div>
-                                        <p class="product-price">$44.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Premium Cat Food to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder cat" role="img" aria-label="Self-Cleaning Litter Box product image">
-                                        <span class="product-icon" aria-hidden="true">📦</span>
-                                        Litter Box
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Cat</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Self-Cleaning Litter Box details">Self-Cleaning Litter Box</a></h3>
-                                        <p class="product-desc">Automatic rake system. Odor control &amp; easy maintenance.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(167)</span></div>
-                                        <p class="product-price">$89.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Self-Cleaning Litter Box to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                        <!-- Bird Supplies Section -->
-                        <section aria-labelledby="birds-heading" id="birds">
-                            <h2 id="birds-heading" class="faq-section-title">🦜 Bird Supplies</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder bird" role="img" aria-label="Deluxe Bird Cage product image">
-                                        <span class="product-icon" aria-hidden="true">🦜</span>
-                                        Bird Cage
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Bird</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Deluxe Bird Cage details">Deluxe Bird Cage</a></h3>
-                                        <p class="product-desc">36" wrought-iron cage with perches, feeders &amp; play top.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(92)</span></div>
-                                        <p class="product-price">$89.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Deluxe Bird Cage to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder bird" role="img" aria-label="Parrot Perch Set product image">
-                                        <span class="product-icon" aria-hidden="true">🐦</span>
-                                        Parrot Perch Set
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Bird</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Parrot Perch Set details">Parrot Perch Set</a></h3>
-                                        <p class="product-desc">Natural wood perches set of 3. Safe for all parrot species.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(88)</span></div>
-                                        <p class="product-price">$29.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Parrot Perch Set to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder bird" role="img" aria-label="Premium Bird Seed Mix product image">
-                                        <span class="product-icon" aria-hidden="true">🌱</span>
-                                        Bird Seed Mix
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Bird</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Premium Bird Seed Mix details">Premium Bird Seed Mix</a></h3>
-                                        <p class="product-desc">20+ seed blend for parakeets, canaries &amp; finches. 5 lb bag.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(224)</span></div>
-                                        <p class="product-price">$18.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Premium Bird Seed Mix to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder bird" role="img" aria-label="Bird Bath product image">
-                                        <span class="product-icon" aria-hidden="true">💧</span>
-                                        Bird Bath
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Bird</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Bird Bath details">Hanging Bird Bath</a></h3>
-                                        <p class="product-desc">Easy-clean plastic bird bath with mounting clips.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(56)</span></div>
-                                        <p class="product-price">$15.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Hanging Bird Bath to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                        <!-- Fish & Aquarium Section -->
-                        <section aria-labelledby="fish-heading" id="fish">
-                            <h2 id="fish-heading" class="faq-section-title">🐠 Fish &amp; Aquarium</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder fish" role="img" aria-label="Aquarium Starter Kit product image">
-                                        <span class="product-icon" aria-hidden="true">🐠</span>
-                                        Aquarium Kit
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Fish</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Aquarium Starter Kit details">Aquarium Starter Kit (20 Gal)</a></h3>
-                                        <p class="product-desc">Complete 20-gallon setup with filter, LED light &amp; heater.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(156)</span></div>
-                                        <p class="product-price">$129.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Aquarium Starter Kit to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder fish" role="img" aria-label="Fish Food Variety Pack product image">
-                                        <span class="product-icon" aria-hidden="true">🐟</span>
-                                        Fish Food Pack
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Fish</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Fish Food Variety Pack details">Fish Food Variety Pack</a></h3>
-                                        <p class="product-desc">6-pack assortment of flakes, pellets &amp; freeze-dried treats.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(203)</span></div>
-                                        <p class="product-price">$12.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Fish Food Variety Pack to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder fish" role="img" aria-label="Aquarium Water Conditioner product image">
-                                        <span class="product-icon" aria-hidden="true">💧</span>
-                                        Water Conditioner
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Fish</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Aquarium Water Conditioner details">Aquarium Water Conditioner</a></h3>
-                                        <p class="product-desc">Neutralizes chlorine &amp; heavy metals. Treats 500 gallons.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(178)</span></div>
-                                        <p class="product-price">$9.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Aquarium Water Conditioner to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder fish" role="img" aria-label="LED Aquarium Light product image">
-                                        <span class="product-icon" aria-hidden="true">💡</span>
-                                        LED Light
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Fish</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View LED Aquarium Light details">LED Aquarium Light (24")</a></h3>
-                                        <p class="product-desc">Full-spectrum LED for 20-30 gallon tanks. Timer function included.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(267)</span></div>
-                                        <p class="product-price">$42.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add LED Aquarium Light to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                        <!-- Reptile Section -->
-                        <section aria-labelledby="reptiles-heading" id="reptiles">
-                            <h2 id="reptiles-heading" class="faq-section-title">🦎 Reptile Supplies</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder reptile" role="img" aria-label="Reptile Heat Lamp product image">
-                                        <span class="product-icon" aria-hidden="true">🦎</span>
-                                        Heat Lamp
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Reptile</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Reptile Heat Lamp details">Reptile Heat Lamp</a></h3>
-                                        <p class="product-desc">100W basking spot lamp with UVA/UVB. For lizards &amp; turtles.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(74)</span></div>
-                                        <p class="product-price">$34.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Reptile Heat Lamp to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder reptile" role="img" aria-label="Turtle Habitat Kit product image">
-                                        <span class="product-icon" aria-hidden="true">🐢</span>
-                                        Turtle Habitat
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Reptile</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Turtle Habitat Kit details">Turtle Habitat Kit</a></h3>
-                                        <p class="product-desc">Complete 40-gallon aquatic turtle setup with filter &amp; basking dock.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(61)</span></div>
-                                        <p class="product-price">$79.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Turtle Habitat Kit to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder reptile" role="img" aria-label="Reptile Substrate product image">
-                                        <span class="product-icon" aria-hidden="true">🪨</span>
-                                        Reptile Substrate
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Reptile</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Reptile Substrate details">Reptile Substrate (10 qt)</a></h3>
-                                        <p class="product-desc">Natural coconut fiber substrate. Great for humidity control.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(112)</span></div>
-                                        <p class="product-price">$16.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Reptile Substrate to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder reptile" role="img" aria-label="Reptile Thermometer product image">
-                                        <span class="product-icon" aria-hidden="true">🌡️</span>
-                                        Thermometer
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Reptile</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Digital Reptile Thermometer details">Digital Reptile Thermometer</a></h3>
-                                        <p class="product-desc">Dual-zone thermometer with hygrometer for precise temperature control.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(95)</span></div>
-                                        <p class="product-price">$22.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Digital Reptile Thermometer to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                        <!-- Small Animals Section -->
-                        <section aria-labelledby="small-animals-heading" id="small-animals">
-                            <h2 id="small-animals-heading" class="faq-section-title">🐹 Small Animals</h2>
-                            <div class="product-grid">
-                                <article class="product-card">
-                                    <div class="product-image-placeholder small-animal" role="img" aria-label="Hamster Exercise Wheel product image">
-                                        <span class="product-icon" aria-hidden="true">🐹</span>
-                                        Hamster Wheel
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Small Animals</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Hamster Exercise Wheel details">Hamster Exercise Wheel</a></h3>
-                                        <p class="product-desc">Silent spinner, 8.5" diameter. Safe for hamsters &amp; gerbils.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="5 stars">★★★★★</span> <span class="rating-count">(318)</span></div>
-                                        <p class="product-price">$14.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Hamster Exercise Wheel to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder small-animal" role="img" aria-label="Guinea Pig Cage product image">
-                                        <span class="product-icon" aria-hidden="true">🐾</span>
-                                        Guinea Pig Cage
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Small Animals</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Guinea Pig Cage details">Guinea Pig Cage (XL)</a></h3>
-                                        <p class="product-desc">Extra-large 47" cage with ramp, 2 levels &amp; pull-out tray.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(143)</span></div>
-                                        <p class="product-price">$64.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Guinea Pig Cage to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder small-animal" role="img" aria-label="Small Animal Bedding product image">
-                                        <span class="product-icon" aria-hidden="true">🌾</span>
-                                        Animal Bedding
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Small Animals</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Small Animal Bedding details">Small Animal Bedding (60L)</a></h3>
-                                        <p class="product-desc">Odor-control paper bedding. 99.9% dust-free. 60L bag.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4.5 stars">★★★★½</span> <span class="rating-count">(276)</span></div>
-                                        <p class="product-price">$19.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Small Animal Bedding to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                                <article class="product-card">
-                                    <div class="product-image-placeholder small-animal" role="img" aria-label="Rabbit Hutch product image">
-                                        <span class="product-icon" aria-hidden="true">🐰</span>
-                                        Rabbit Hutch
-                                    </div>
-                                    <div class="product-info">
-                                        <span class="product-category-badge">Small Animals</span>
-                                        <h3 class="product-name"><a href="product-detail.html" title="View Outdoor Rabbit Hutch details">Outdoor Rabbit Hutch</a></h3>
-                                        <p class="product-desc">Weather-resistant wood hutch with run area. Ideal for 1-2 rabbits.</p>
-                                        <div class="product-rating"><span class="stars" aria-label="4 stars">★★★★☆</span> <span class="rating-count">(87)</span></div>
-                                        <p class="product-price">$119.99</p>
-                                        <a href="cart.html" class="btn btn-primary btn-sm btn-block" title="Add Outdoor Rabbit Hutch to cart">Add to Cart</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                    </div><!-- end products main area -->
-                </div><!-- end products-layout -->
+          </div>
+          <!-- 3 -->
+          <div class="product-card">
+            <div class="product-img product-img-bird" role="img" aria-label="Deluxe Bird Cage with multiple perches and accessories"></div>
+            <div class="product-body">
+              <span class="product-category">Bird Supplies</span>
+              <h2 class="product-name">Deluxe Bird Cage</h2>
+              <p class="product-desc">Spacious cage with multiple perches, food dishes, and swing. Perfect for medium to large birds.</p>
+              <p class="product-price">$89.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
             </div>
-        </div>
-    </main>
-
-    <footer class="site-footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
-                        <span class="logo-text">Pet Supply <span>Plus</span></span>
-                        <span class="logo-tagline">Everything Your Pet Needs</span>
-                    </a>
-                    <p class="footer-desc">Your trusted source for premium pet supplies since 2010.</p>
-                    <div class="footer-social" aria-label="Social media links">
-                        <a href="#" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
-                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter">t</a>
-                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram">in</a>
-                        <a href="#" class="social-link" title="Follow us on Pinterest" aria-label="Pinterest">p</a>
-                        <a href="#" class="social-link" title="Subscribe to our YouTube channel" aria-label="YouTube">▶</a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links" role="list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Shop All Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Customer Service</h4>
-                    <ul class="footer-links" role="list">
-                        <li><a href="customer-service.html">Live Chat Support</a></li>
-                        <li><a href="order-status.html">Track My Order</a></li>
-                        <li><a href="cart.html">Shopping Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="faq.html">Returns &amp; Exchanges</a></li>
-                        <li><a href="faq.html">Shipping Info</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Stay Connected</h4>
-                    <p class="footer-newsletter-text">Get exclusive deals and pet care tips in your inbox.</p>
-                    <form class="footer-newsletter-form" action="#" method="post" aria-label="Footer newsletter signup">
-                        <label for="footer-email-products" class="sr-only">Email address</label>
-                        <input type="email" id="footer-email-products" name="email" placeholder="Your email" required aria-required="true" autocomplete="email">
-                        <button type="submit" aria-label="Subscribe to newsletter">Go</button>
-                    </form>
-                    <ul class="footer-links footer-links-extra" role="list">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
+          </div>
+          <!-- 4 -->
+          <div class="product-card">
+            <div class="product-img product-img-fish" role="img" aria-label="20 gallon aquarium starter kit with filter and LED light"></div>
+            <div class="product-body">
+              <span class="product-category">Fish &amp; Aquarium</span>
+              <h2 class="product-name">Aquarium Starter Kit (20 Gallon)</h2>
+              <p class="product-desc">Complete setup includes tank, filter, LED light, heater, thermometer, and water conditioner.</p>
+              <p class="product-price">$129.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Pet Supply Plus. All Rights Reserved. | Last Updated: January 30, 2026</p>
-                <p>Contact: <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts">aroberts@petsupplyplus.com</a> | 📞 1-800-PET-PLUS</p>
+          </div>
+          <!-- 5 -->
+          <div class="product-card">
+            <div class="product-img product-img-reptile" role="img" aria-label="Reptile heat lamp with ceramic socket and reflector dome"></div>
+            <div class="product-body">
+              <span class="product-category">Reptile</span>
+              <h2 class="product-name">Reptile Heat Lamp</h2>
+              <p class="product-desc">100W basking bulb with ceramic socket dome. Provides essential UVA rays for reptile health.</p>
+              <p class="product-price">$34.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
             </div>
+          </div>
+          <!-- 6 -->
+          <div class="product-card">
+            <div class="product-img product-img-small" role="img" aria-label="Hamster exercise wheel silent spinner 8 inch diameter"></div>
+            <div class="product-body">
+              <span class="product-category">Small Animals</span>
+              <h2 class="product-name">Hamster Exercise Wheel</h2>
+              <p class="product-desc">Silent spinner wheel 8-inch diameter. Solid running surface prevents foot injuries. Easy to clean.</p>
+              <p class="product-price">$14.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="product-card">
+            <div class="product-img product-img-dog" role="img" aria-label="Brown genuine leather dog collar with silver hardware"></div>
+            <div class="product-body">
+              <span class="product-category">Dog Supplies</span>
+              <h2 class="product-name">Dog Leather Collar</h2>
+              <p class="product-desc">Genuine leather collar with quick-release buckle and ID tag ring. Available in sizes S, M, L, XL.</p>
+              <p class="product-price">$19.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="product-card">
+            <div class="product-img product-img-cat" role="img" aria-label="Five foot tall cat scratching post tower with multiple platforms"></div>
+            <div class="product-body">
+              <span class="product-category">Cat Supplies</span>
+              <h2 class="product-name">Cat Scratching Post Tower</h2>
+              <p class="product-desc">Multi-level cat tree with sisal scratching posts, cozy perches, and hanging toys. 5 ft tall.</p>
+              <p class="product-price">$69.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="product-card">
+            <div class="product-img product-img-fish" role="img" aria-label="Fish food variety pack with flakes pellets and freeze-dried treats"></div>
+            <div class="product-body">
+              <span class="product-category">Fish &amp; Aquarium</span>
+              <h2 class="product-name">Fish Food Variety Pack</h2>
+              <p class="product-desc">Nutritious variety pack includes tropical flakes, sinking pellets, and freeze-dried bloodworms.</p>
+              <p class="product-price">$12.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="product-card">
+            <div class="product-img product-img-dog" role="img" aria-label="Dog grooming kit with brush slicker comb nail clippers and scissors"></div>
+            <div class="product-body">
+              <span class="product-category">Dog Supplies</span>
+              <h2 class="product-name">Dog Grooming Kit</h2>
+              <p class="product-desc">Complete 7-piece kit includes slicker brush, fine-tooth comb, nail clippers, and ear wipes.</p>
+              <p class="product-price">$39.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 11 -->
+          <div class="product-card">
+            <div class="product-img product-img-bird" role="img" aria-label="Parrot perch set with three natural wood perches of varying diameter"></div>
+            <div class="product-body">
+              <span class="product-category">Bird Supplies</span>
+              <h2 class="product-name">Parrot Perch Set</h2>
+              <p class="product-desc">Set of 3 natural wood perches in varying diameters. Promotes healthy feet and natural behavior.</p>
+              <p class="product-price">$29.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <!-- 12 -->
+          <div class="product-card">
+            <div class="product-img product-img-reptile" role="img" aria-label="Turtle habitat kit with 20 gallon tank basking platform and filter"></div>
+            <div class="product-body">
+              <span class="product-category">Reptile</span>
+              <h2 class="product-name">Turtle Habitat Kit</h2>
+              <p class="product-desc">Complete turtle habitat with 20-gallon tank, basking platform, submersible filter, and UVB lamp.</p>
+              <p class="product-price">$79.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <a href="product-detail.html" class="btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">Pet Supply Plus</p>
+          <p class="footer-tagline">Everything Your Pet Needs</p>
+          <p>Your one-stop shop for all pet supplies. We carry products for dogs, cats, birds, fish, reptiles, and small animals.</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customer-service.html">Customer Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="order-status.html">Order Status</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Pet Lane<br>Anytown, USA 12345</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: <a href="mailto:aroberts@petsupplyplus.com">aroberts@petsupplyplus.com</a></p>
+          <div class="social-links">
+            <a href="#" title="Facebook" class="social-link">Facebook</a>
+            <a href="#" title="Twitter" class="social-link">Twitter</a>
+            <a href="#" title="Instagram" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pet Supply Plus. All Rights Reserved.</p>
+        <p>Last Updated: January 30, 2026 | Contact: <a href="mailto:aroberts@petsupplyplus.com">aroberts@petsupplyplus.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
