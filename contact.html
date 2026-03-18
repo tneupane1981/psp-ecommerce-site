@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pet Supply Plus — Everything Your Pet Needs</title>
+    <meta name="description" content="Contact Pet Supply Plus by phone, email, or our online form. Find store locations, hours of operation, and social media links.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="top-bar-left">📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST</span>
+            <div class="top-bar-right">
+                <a href="order-status.html" title="Check your order status">Track Order</a>
+                <a href="customer-service.html" title="Contact customer service">Help</a>
+                <a href="cart.html" class="cart-icon-wrapper" title="View shopping cart">
+                    🛒 Cart <span class="cart-count" aria-label="3 items in cart">3</span>
+                </a>
+                <a href="#" title="Sign in or create an account">My Account</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                    <span class="logo-text">Pet Supply <span>Plus</span></span>
+                    <span class="logo-tagline">Everything Your Pet Needs</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list" id="nav-list" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+        <div class="container">
+            <ol class="breadcrumb-list" role="list">
+                <li><a href="index.html" title="Go to Home page">Home</a></li>
+                <li><span class="current" aria-current="page">Contact Us</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Send us a message and we'll respond within 24 hours.</p>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+
+                <!-- Success Message -->
+                <div id="contact-success" class="success-box hidden" role="alert" aria-live="assertive">
+                    <strong>✅ Message Sent!</strong> Thank you for reaching out. We'll get back to you within 24 hours at the email you provided.
+                </div>
+
+                <div class="contact-layout">
+
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="checkout-form-section">
+                            <h2>Send Us a Message</h2>
+                            <p class="required-note"><span>*</span> Required fields</p>
+                            <form id="contact-form" action="#" method="post" aria-label="Contact form" novalidate>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-first-name">First Name <span aria-label="required">*</span></label>
+                                        <input type="text" id="contact-first-name" name="first-name" required aria-required="true" placeholder="Jane" autocomplete="given-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-last-name">Last Name <span aria-label="required">*</span></label>
+                                        <input type="text" id="contact-last-name" name="last-name" required aria-required="true" placeholder="Smith" autocomplete="family-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address <span aria-label="required">*</span></label>
+                                    <input type="email" id="contact-email" name="email" required aria-required="true" placeholder="jane.smith@example.com" autocomplete="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-phone">Phone Number</label>
+                                    <input type="tel" id="contact-phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-subject">Subject <span aria-label="required">*</span></label>
+                                    <select id="contact-subject" name="subject" required aria-required="true">
+                                        <option value="">-- Select a Subject --</option>
+                                        <option value="order">Order Inquiry</option>
+                                        <option value="shipping">Shipping Question</option>
+                                        <option value="return">Return or Exchange</option>
+                                        <option value="product">Product Question</option>
+                                        <option value="billing">Billing Issue</option>
+                                        <option value="feedback">General Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-message">Message <span aria-label="required">*</span></label>
+                                    <textarea id="contact-message" name="message" required aria-required="true" placeholder="Please describe your question or concern in detail…"></textarea>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="contact-newsletter" name="newsletter">
+                                    <label for="contact-newsletter">Subscribe to our newsletter for deals and pet care tips</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" title="Submit contact form">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Sidebar -->
+                    <aside aria-label="Contact information">
+                        <div class="contact-info-card">
+                            <h3>📞 Get in Touch</h3>
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon" aria-hidden="true">📞</span>
+                                <div>
+                                    <strong>Toll-Free Phone</strong><br>
+                                    <a href="tel:+18007387587" title="Call Pet Supply Plus">1-800-PET-PLUS (738-7587)</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon" aria-hidden="true">📧</span>
+                                <div>
+                                    <strong>General Inquiries</strong><br>
+                                    <a href="mailto:info@petsupplyplus.com" title="Email Pet Supply Plus general inquiries">info@petsupplyplus.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon" aria-hidden="true">🛟</span>
+                                <div>
+                                    <strong>Customer Support</strong><br>
+                                    <a href="mailto:support@petsupplyplus.com" title="Email Pet Supply Plus support">support@petsupplyplus.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-icon" aria-hidden="true">📢</span>
+                                <div>
+                                    <strong>Marketing Director</strong><br>
+                                    <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts, Marketing Director">aroberts@petsupplyplus.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3>🕐 Business Hours</h3>
+                            <table class="hours-table" aria-label="Business hours">
+                                <tbody>
+                                    <tr>
+                                        <td>Monday – Friday</td>
+                                        <td>8:00 AM – 8:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>9:00 AM – 6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>10:00 AM – 4:00 PM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mt-1"><small>All times Eastern Standard Time (EST). Live chat is available 24/7.</small></p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3>🗺️ Headquarters</h3>
+                            <div class="map-placeholder" role="img" aria-label="Map showing Pet Supply Plus headquarters location in Columbus, Ohio">
+                                📍 1247 Pet Plaza Drive<br>Columbus, OH 43215<br>
+                                <small>(Map placeholder — interactive map would load here)</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <h3>📱 Follow Us</h3>
+                            <div class="footer-social" aria-label="Social media links">
+                                <a href="#" class="social-link" title="Follow Pet Supply Plus on Facebook" aria-label="Facebook">f</a>
+                                <a href="#" class="social-link" title="Follow Pet Supply Plus on Twitter" aria-label="Twitter">t</a>
+                                <a href="#" class="social-link" title="Follow Pet Supply Plus on Instagram" aria-label="Instagram">in</a>
+                                <a href="#" class="social-link" title="Follow Pet Supply Plus on Pinterest" aria-label="Pinterest">p</a>
+                                <a href="#" class="social-link" title="Subscribe to Pet Supply Plus YouTube" aria-label="YouTube">▶</a>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                        <span class="logo-text">Pet Supply <span>Plus</span></span>
+                        <span class="logo-tagline">Everything Your Pet Needs</span>
+                    </a>
+                    <p class="footer-desc">Your trusted source for premium pet supplies since 2010.</p>
+                    <div class="footer-social" aria-label="Social media links">
+                        <a href="#" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram">in</a>
+                        <a href="#" class="social-link" title="Follow us on Pinterest" aria-label="Pinterest">p</a>
+                        <a href="#" class="social-link" title="Subscribe to our YouTube channel" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="customer-service.html">Live Chat Support</a></li>
+                        <li><a href="order-status.html">Track My Order</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="faq.html">Returns &amp; Exchanges</a></li>
+                        <li><a href="faq.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p class="footer-newsletter-text">Get exclusive deals and pet care tips in your inbox.</p>
+                    <form class="footer-newsletter-form" action="#" method="post" aria-label="Footer newsletter signup">
+                        <label for="footer-email-contact" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email-contact" name="email" placeholder="Your email" required aria-required="true" autocomplete="email">
+                        <button type="submit" aria-label="Subscribe to newsletter">Go</button>
+                    </form>
+                    <ul class="footer-links footer-links-extra" role="list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pet Supply Plus. All Rights Reserved. | Last Updated: January 30, 2026</p>
+                <p>Contact: <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts">aroberts@petsupplyplus.com</a> | 📞 1-800-PET-PLUS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
