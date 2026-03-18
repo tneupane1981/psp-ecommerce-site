@@ -22,6 +22,18 @@
 
 ---
 
+## 1.1 Project Team
+
+| Role | Name |
+|------|------|
+| **Project Manager** | Tulsi Neupane |
+| **Stakeholders** | David Clark, James Neman |
+| **Network Engineer** | Michael Thompson |
+| **Info System Security Engineer** | Sarah Martinez |
+| **Client Requestor** | Angela Roberts |
+
+---
+
 ## 2. Site Purpose and Target Audience
 
 ### Purpose
@@ -169,7 +181,7 @@ The warm orange accent color creates energy and calls to action, while navy blue
 
 | Layer | Technology |
 |-------|-----------|
-| **HTML** | HTML5 (semantic elements: header, nav, main, footer, section, article, aside) |
+| **HTML** | HTML5 (semantic elements: header, nav, main, footer, section, article, aside, figure) |
 | **CSS** | CSS3 (Grid, Flexbox, Custom Properties, Media Queries) |
 | **JavaScript** | Vanilla ES5+ (no frameworks or dependencies) |
 | **Fonts** | Arial, Helvetica, sans-serif (system stack — no external font dependency) |
@@ -291,4 +303,5 @@ The Pet Supply Plus website was designed with WCAG 2.1 Level AA accessibility gu
 ---
 
 *Document prepared by the Web Development Team for Pet Supply Plus, Inc.*  
-*Project PSP-WEB-2026-01 | January 30, 2026*
+*Project PSP-WEB-2026-01 | January 30, 2026*  
+*Project Manager: Tulsi Neupane*
