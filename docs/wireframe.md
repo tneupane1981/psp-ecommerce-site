@@ -1,7 +1,7 @@
 # Pet Supply Plus — Wireframe Mockups
 
 **Project:** PSP-WEB-2026-01  
-**Date:** January 30, 2026  
+**Date:** March 15, 2026  
 **Author:** Web Development Team  
 
 ---
@@ -513,7 +513,7 @@
 ├────────────────────────────────────────────────────────────────┤
 │ CONTENT BODY (centered, max-width 860px)                       │
 │                                                                │
-│  Last Updated: January 30, 2026                               │
+│  Last Updated: March 15, 2026                               │
 │  Introduction paragraph...                                     │
 │                                                                │
 │  1. Information We Collect                                     │
@@ -557,4 +557,4 @@
 ---
 
 *Wireframe document prepared by the Web Development Team*  
-*Project PSP-WEB-2026-01 | Pet Supply Plus, Inc. | January 30, 2026*
+*Project PSP-WEB-2026-01 | Pet Supply Plus, Inc. | March 15, 2026*
