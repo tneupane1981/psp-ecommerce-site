@@ -74,6 +74,15 @@ Pet Supply Plus Website
 │   ├── Customer Testimonials
 │   └── Newsletter Signup
 │
+├── account.html                (My Account)
+│   ├── Sign In Form
+│   ├── Create Account Panel
+│   └── Account Dashboard (sample data)
+│       ├── Order History Table (3 sample orders)
+│       ├── Profile Information
+│       ├── Shipping Addresses (2 saved)
+│       └── Payment Methods (1 saved card)
+│
 ├── about.html                  (About Us)
 │   ├── Company History & Mission
 │   ├── Team Profiles (4 members)
@@ -167,7 +176,7 @@ Pet Supply Plus Website
 The design follows a **clean, professional e-commerce aesthetic** that communicates trust, quality, and care for pets. The interface prioritizes **clarity and ease of use** over decorative complexity, ensuring that pet owners can quickly find products and complete purchases with minimal friction.
 
 ### Design Principles Applied
-- **Repetition:** Consistent header, navigation, footer, product card patterns, and button styles across all 14 pages
+- **Repetition:** Consistent header, navigation, footer, product card patterns, and button styles across all 15 pages
 - **Contrast:** Navy blue primary vs. white backgrounds; orange accent on CTAs; teal for secondary actions
 - **Proximity:** Related elements grouped (product info, pricing, CTA button in cards; chat UI components together)
 - **Alignment:** Grid-based layouts, consistent padding, aligned form labels and inputs
@@ -291,6 +300,7 @@ The Pet Supply Plus website was designed with WCAG 2.1 Level AA accessibility gu
 | Category | Pages |
 |----------|-------|
 | Main/Home | 1 |
+| Account | 1 (my account) |
 | About | 1 |
 | Shop/Products | 2 (catalog + detail) |
 | Cart & Checkout | 3 (cart, checkout, payment) |
@@ -298,7 +308,7 @@ The Pet Supply Plus website was designed with WCAG 2.1 Level AA accessibility gu
 | Contact & Help | 3 (contact, faq, customer-service overlap) |
 | Legal | 2 (privacy, terms) |
 | Utility | 1 (sitemap) |
-| **Total** | **14** |
+| **Total** | **15** |
 
 ---
 

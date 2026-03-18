@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your Pet Supply Plus account. Manage your orders, profile information, shipping addresses, and payment methods.">
+  <title>My Account | Pet Supply Plus — Everything Your Pet Needs</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-brand">
+          <a href="index.html" class="site-logo">
+            <span class="logo-text">Pet Supply Plus</span>
+            <span class="logo-tagline">Everything Your Pet Needs</span>
+          </a>
+        </div>
+        <div class="header-utils">
+          <a href="account.html" class="util-link" aria-current="page" title="My Account">My Account</a>
+          <a href="cart.html" class="util-link cart-link" title="Shopping Cart">
+            Cart <span class="cart-count">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container">
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="customer-service.html" class="nav-link">Customer Service</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Account</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1>My Account</h1>
+        <p class="page-intro">Sign in to manage your orders, profile, and preferences</p>
+      </div>
+    </div>
+
+    <!-- Sign In Section -->
+    <div class="section">
+      <div class="container">
+        <div class="checkout-layout">
+
+          <!-- Sign In Form -->
+          <section class="checkout-form-section" aria-labelledby="signin-heading">
+            <h2 id="signin-heading">Sign In to Your Account</h2>
+            <p>Welcome back! Sign in to access your order history, saved addresses, and more.</p>
+
+            <form id="signin-form" action="#" method="post" aria-label="Sign in form">
+              <div class="form-group">
+                <label for="signin-email">Email Address</label>
+                <input type="email" id="signin-email" name="email" required aria-required="true"
+                       placeholder="jane.smith@example.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" name="password" required aria-required="true"
+                       placeholder="Enter your password" autocomplete="current-password">
+              </div>
+              <div class="mt-2">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+              </div>
+              <p class="text-center mt-2">
+                <a href="account.html" title="Reset your Pet Supply Plus account password">Forgot Password?</a>
+              </p>
+            </form>
+          </section>
+
+          <!-- New Customer Box -->
+          <div class="order-summary-box">
+            <h2>New Customer?</h2>
+            <p>Create an account to enjoy faster checkout, track your orders, save your addresses, and receive exclusive member offers.</p>
+            <ul class="account-benefits-list">
+              <li>✅ Faster checkout</li>
+              <li>✅ Order history &amp; tracking</li>
+              <li>✅ Saved addresses</li>
+              <li>✅ Exclusive member offers</li>
+            </ul>
+            <a href="account.html" class="btn btn-secondary btn-block mt-3" title="Create a new Pet Supply Plus account">Create Account</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Dashboard (sample data, shown as a UI prototype of the logged-in view) -->
+    <div class="section section-alt">
+      <div class="container">
+        <section class="account-dashboard" aria-labelledby="dashboard-heading">
+
+          <div class="account-dashboard-header">
+            <div>
+              <h2 id="dashboard-heading">Account Dashboard</h2>
+              <p class="account-welcome">Welcome back, <strong>Jane Smith</strong>! Last signed in: March 15, 2026</p>
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm" aria-label="Sign out of your Pet Supply Plus account">Sign Out</button>
+          </div>
+
+          <div class="account-grid">
+
+            <!-- Order History -->
+            <section class="account-card" aria-labelledby="order-history-heading">
+              <div class="account-card-header">
+                <h3 id="order-history-heading">Order History</h3>
+                <a href="order-status.html" title="View full order history and tracking information">View All Orders</a>
+              </div>
+              <div class="cart-table-wrapper">
+                <table class="cart-table" aria-label="Recent orders">
+                  <thead>
+                    <tr>
+                      <th id="order-col-num" scope="col">Order #</th>
+                      <th id="order-col-date" scope="col">Date</th>
+                      <th id="order-col-status" scope="col">Status</th>
+                      <th id="order-col-total" scope="col">Total</th>
+                      <th id="order-col-action" scope="col">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td headers="order-col-num">PSP-2026-00312</td>
+                      <td headers="order-col-date">March 10, 2026</td>
+                      <td headers="order-col-status"><span class="badge badge-info">Shipped</span></td>
+                      <td headers="order-col-total">$94.97</td>
+                      <td headers="order-col-action"><a href="order-status.html" title="View details for order PSP-2026-00312">View Order</a></td>
+                    </tr>
+                    <tr>
+                      <td headers="order-col-num">PSP-2026-00289</td>
+                      <td headers="order-col-date">February 24, 2026</td>
+                      <td headers="order-col-status"><span class="badge badge-success">Delivered</span></td>
+                      <td headers="order-col-total">$49.99</td>
+                      <td headers="order-col-action"><a href="order-status.html" title="View details for order PSP-2026-00289">View Order</a></td>
+                    </tr>
+                    <tr>
+                      <td headers="order-col-num">PSP-2026-00241</td>
+                      <td headers="order-col-date">February 3, 2026</td>
+                      <td headers="order-col-status"><span class="badge badge-success">Delivered</span></td>
+                      <td headers="order-col-total">$161.95</td>
+                      <td headers="order-col-action"><a href="order-status.html" title="View details for order PSP-2026-00241">View Order</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Profile Information -->
+            <section class="account-card" aria-labelledby="profile-heading">
+              <div class="account-card-header">
+                <h3 id="profile-heading">Profile Information</h3>
+                <button type="button" class="btn btn-secondary btn-sm" aria-label="Edit your profile information">Edit Profile</button>
+              </div>
+              <dl class="account-info-list">
+                <dt>Full Name</dt>
+                <dd>Jane Smith</dd>
+                <dt>Email Address</dt>
+                <dd>jane.smith@example.com</dd>
+                <dt>Phone Number</dt>
+                <dd>(555) 867-5309</dd>
+                <dt>Member Since</dt>
+                <dd>January 2024</dd>
+              </dl>
+            </section>
+
+            <!-- Shipping Addresses -->
+            <section class="account-card" aria-labelledby="addresses-heading">
+              <div class="account-card-header">
+                <h3 id="addresses-heading">Shipping Addresses</h3>
+                <button type="button" class="btn btn-secondary btn-sm" aria-label="Add a new shipping address">Add New Address</button>
+              </div>
+              <div class="address-list">
+                <div class="address-item">
+                  <p class="address-label"><strong>Home (Default)</strong></p>
+                  <address>
+                    Jane Smith<br>
+                    456 Maple Drive, Apt 2B<br>
+                    Columbus, OH 43215
+                  </address>
+                  <button type="button" class="btn btn-outline btn-sm mt-1" aria-label="Edit home shipping address">Edit Address</button>
+                </div>
+                <div class="address-item">
+                  <p class="address-label"><strong>Work</strong></p>
+                  <address>
+                    Jane Smith<br>
+                    1200 Tech Park Blvd, Suite 400<br>
+                    Columbus, OH 43230
+                  </address>
+                  <button type="button" class="btn btn-outline btn-sm mt-1" aria-label="Edit work shipping address">Edit Address</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Payment Methods -->
+            <section class="account-card" aria-labelledby="payment-methods-heading">
+              <div class="account-card-header">
+                <h3 id="payment-methods-heading">Payment Methods</h3>
+                <button type="button" class="btn btn-secondary btn-sm" aria-label="Add a new payment method">Add New</button>
+              </div>
+              <div class="payment-method-list">
+                <div class="payment-method-item">
+                  <p><strong>Visa</strong> ending in <strong>4242</strong></p>
+                  <p class="account-meta">Expires: 09/2027 &nbsp;|&nbsp; Default Payment Method</p>
+                  <button type="button" class="btn btn-outline btn-sm mt-1" aria-label="Edit Visa card ending in 4242">Edit Card</button>
+                </div>
+              </div>
+            </section>
+
+          </div><!-- end account-grid -->
+
+          <div class="mt-4 text-center">
+            <button type="button" class="btn btn-secondary" aria-label="Sign out of your Pet Supply Plus account">Sign Out</button>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">Pet Supply Plus</p>
+          <p class="footer-tagline">Everything Your Pet Needs</p>
+          <p>Your one-stop shop for all pet supplies. We carry products for dogs, cats, birds, fish, reptiles, and small animals.</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="customer-service.html">Customer Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="order-status.html">Order Status</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Pet Lane<br>Anytown, USA 12345</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: <a href="mailto:aroberts@petsupplyplus.com">aroberts@petsupplyplus.com</a></p>
+          <div class="social-links">
+            <a href="#" title="Facebook" class="social-link">Facebook</a>
+            <a href="#" title="Twitter" class="social-link">Twitter</a>
+            <a href="#" title="Instagram" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pet Supply Plus. All Rights Reserved.</p>
+        <p>Last Updated: March 15, 2026 | Contact: <a href="mailto:aroberts@petsupplyplus.com">aroberts@petsupplyplus.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
