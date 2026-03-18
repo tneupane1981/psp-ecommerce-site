@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status | Pet Supply Plus — Everything Your Pet Needs</title>
+    <meta name="description" content="Track your Pet Supply Plus order. Enter your order number and email to check your order status and estimated delivery date.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="top-bar-left">📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST</span>
+            <div class="top-bar-right">
+                <a href="order-status.html" title="Check your order status">Track Order</a>
+                <a href="customer-service.html" title="Contact customer service">Help</a>
+                <a href="cart.html" class="cart-icon-wrapper" title="View shopping cart">
+                    🛒 Cart <span class="cart-count" aria-label="3 items in cart">3</span>
+                </a>
+                <a href="#" title="Sign in or create an account">My Account</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                    <span class="logo-text">Pet Supply <span>Plus</span></span>
+                    <span class="logo-tagline">Everything Your Pet Needs</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list" id="nav-list" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+        <div class="container">
+            <ol class="breadcrumb-list" role="list">
+                <li><a href="index.html" title="Go to Home page">Home</a></li>
+                <li><span class="current" aria-current="page">Order Status</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Track Your Order</h1>
+                <p>Enter your order details below to check the status and estimated delivery of your order.</p>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+
+                <!-- Order Lookup Form -->
+                <div class="order-lookup-box">
+                    <h2>Order Lookup</h2>
+                    <p>Please enter your order number and the email address used at checkout.</p>
+                    <form id="order-lookup-form" action="#" method="get" aria-label="Order lookup form">
+                        <div class="form-group">
+                            <label for="order-number">Order Number <span aria-label="required">*</span></label>
+                            <input type="text" id="order-number" name="order-number" required aria-required="true" placeholder="e.g. PSP-2026-00482" value="PSP-2026-00482">
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email">Email Address <span aria-label="required">*</span></label>
+                            <input type="email" id="order-email" name="order-email" required aria-required="true" placeholder="your-email@example.com" value="jsmith@example.com" autocomplete="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" title="Track your order">Track Order</button>
+                    </form>
+                </div>
+
+                <!-- Order Results (shown after form submission) -->
+                <div id="order-results" aria-live="polite">
+
+                    <div class="checkout-form-section mt-3">
+                        <h2>Order Details</h2>
+                        <div class="form-row">
+                            <div>
+                                <p><strong>Order Number:</strong> PSP-2026-00482</p>
+                                <p><strong>Order Date:</strong> February 18, 2026</p>
+                                <p><strong>Order Status:</strong> <span class="status-badge shipped" role="status">Shipped</span></p>
+                            </div>
+                            <div>
+                                <p><strong>Tracking Number:</strong> 1Z999AA10123456784</p>
+                                <p><strong>Carrier:</strong> UPS Ground</p>
+                                <p><strong>Est. Delivery:</strong> February 24, 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Tracker -->
+                        <h3>Shipment Progress</h3>
+                        <div class="order-status-tracker" role="list" aria-label="Order progress steps">
+                            <div class="tracker-step completed" role="listitem">
+                                <div class="tracker-step-circle" aria-label="Order placed — completed">✓</div>
+                                <span class="tracker-step-label">Ordered</span>
+                            </div>
+                            <div class="tracker-step completed" role="listitem">
+                                <div class="tracker-step-circle" aria-label="Processing — completed">✓</div>
+                                <span class="tracker-step-label">Processing</span>
+                            </div>
+                            <div class="tracker-step active" role="listitem">
+                                <div class="tracker-step-circle" aria-label="Shipped — current status">▶</div>
+                                <span class="tracker-step-label">Shipped</span>
+                            </div>
+                            <div class="tracker-step" role="listitem">
+                                <div class="tracker-step-circle" aria-label="Delivered — pending">4</div>
+                                <span class="tracker-step-label">Delivered</span>
+                            </div>
+                        </div>
+
+                        <!-- Items Ordered -->
+                        <h3>Items in This Order</h3>
+                        <table class="cart-table" aria-label="Items in order PSP-2026-00482">
+                            <thead>
+                                <tr>
+                                    <th id="os-col-item" scope="col">Item</th>
+                                    <th id="os-col-qty" scope="col">Qty</th>
+                                    <th id="os-col-price" scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="os-col-item">Premium Dog Food (Chicken &amp; Rice) — 30 lb</td>
+                                    <td headers="os-col-qty">1</td>
+                                    <td headers="os-col-price">$49.99</td>
+                                </tr>
+                                <tr>
+                                    <td headers="os-col-item">Cat Scratching Post Tower — 52"</td>
+                                    <td headers="os-col-qty">1</td>
+                                    <td headers="os-col-price">$69.99</td>
+                                </tr>
+                                <tr>
+                                    <td headers="os-col-item">Hamster Exercise Wheel — 8.5" Silent</td>
+                                    <td headers="os-col-qty">2</td>
+                                    <td headers="os-col-price">$29.98</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" headers="os-col-item"><strong>Order Total</strong></td>
+                                    <td headers="os-col-price"><strong>$161.95</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <!-- Shipping Address -->
+                        <div class="form-row">
+                            <div class="info-box">
+                                <h4>🚚 Shipping Address</h4>
+                                <p>Jane Smith<br>
+                                123 Main Street, Apt 4B<br>
+                                Columbus, OH 43215<br>
+                                United States</p>
+                            </div>
+                            <div class="info-box">
+                                <h4>📦 Shipment Updates</h4>
+                                <p>Updates are sent to: jsmith@example.com</p>
+                                <p>For help with your order, <a href="customer-service.html" title="Contact customer service">contact our support team</a> or call 1-800-PET-PLUS.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <a href="products.html" class="btn btn-primary" title="Continue shopping at Pet Supply Plus">Continue Shopping</a>
+                            <a href="customer-service.html" class="btn btn-outline mt-1" title="Contact customer service for help">Need Help?</a>
+                        </div>
+                    </div>
+
+                </div><!-- end order-results -->
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                        <span class="logo-text">Pet Supply <span>Plus</span></span>
+                        <span class="logo-tagline">Everything Your Pet Needs</span>
+                    </a>
+                    <p class="footer-desc">Your trusted source for premium pet supplies since 2005.</p>
+                    <div class="footer-social" aria-label="Social media links">
+                        <a href="#" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram">in</a>
+                        <a href="#" class="social-link" title="Follow us on Pinterest" aria-label="Pinterest">p</a>
+                        <a href="#" class="social-link" title="Subscribe to our YouTube channel" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="customer-service.html">Live Chat Support</a></li>
+                        <li><a href="order-status.html">Track My Order</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="faq.html">Returns &amp; Exchanges</a></li>
+                        <li><a href="faq.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p class="footer-newsletter-text">Get exclusive deals and pet care tips in your inbox.</p>
+                    <form class="footer-newsletter-form" action="#" method="post" aria-label="Footer newsletter signup">
+                        <label for="footer-email-orders" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email-orders" name="email" placeholder="Your email" required aria-required="true" autocomplete="email">
+                        <button type="submit" aria-label="Subscribe to newsletter">Go</button>
+                    </form>
+                    <ul class="footer-links footer-links-extra" role="list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pet Supply Plus. All Rights Reserved. | Last Updated: January 30, 2026</p>
+                <p>Contact: <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts">aroberts@petsupplyplus.com</a> | 📞 1-800-PET-PLUS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
