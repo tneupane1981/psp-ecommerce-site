@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Mockups | Pet Supply Plus</title>
+    <meta name="description" content="Wireframe mockups for the key pages of the Pet Supply Plus e-commerce website.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="top-bar-left">📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST</span>
+            <div class="top-bar-right">
+                <a href="order-status.html" title="Check your order status">Track Order</a>
+                <a href="customer-service.html" title="Contact customer service">Help</a>
+                <a href="cart.html" class="cart-icon-wrapper" title="View shopping cart">
+                    🛒 Cart <span class="cart-count" aria-label="3 items in cart">3</span>
+                </a>
+                <a href="#" title="Sign in or create an account">My Account</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                    <span class="logo-text">Pet Supply <span>Plus</span></span>
+                    <span class="logo-tagline">Everything Your Pet Needs</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list" id="nav-list" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+        <div class="container">
+            <ol class="breadcrumb-list" role="list">
+                <li><a href="index.html" title="Go to Home page">Home</a></li>
+                <li><span class="current" aria-current="page">Wireframes</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Wireframe Mockups</h1>
+                <p>Visual layout representations for the key pages of Pet Supply Plus.</p>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+                <p>The wireframes below illustrate the structural layout and key UI elements for each major page. Boxes represent content regions; labels indicate their purpose.</p>
+
+                <!-- Wireframe helper styles scoped to this page -->
+                <style>
+                    .wf-page { border: 2px solid #ccc; border-radius: 6px; margin-bottom: 2.5rem; background: #fafafa; overflow: hidden; }
+                    .wf-title { background: #4a90a4; color: #fff; padding: .5rem 1rem; font-weight: 700; font-size: 1rem; }
+                    .wf-box { border: 1px dashed #999; background: #e9f0f4; text-align: center; padding: .4rem; font-size: .8rem; color: #555; border-radius: 3px; }
+                    .wf-row { display: flex; gap: 8px; margin: 8px; }
+                    .wf-col { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+                    .wf-full { margin: 8px; }
+                    .wf-hero { background: #c5dce5; }
+                    .wf-nav  { background: #d5e8f0; }
+                    .wf-footer { background: #dde6e9; }
+                    .wf-card { background: #fff; border: 1px dashed #aaa; }
+                    .wf-btn  { background: #b2d4de; border-radius: 4px; }
+                    .wf-sidebar { flex: 0 0 180px; }
+                    .wf-main    { flex: 1; }
+                    .wf-label { font-size: .75rem; color: #666; font-style: italic; margin: 4px 8px 0; }
+                </style>
+
+                <!-- ── 1. Homepage ─────────────────────────────────── -->
+                <section aria-labelledby="wf-home">
+                    <h2 id="wf-home">1. Homepage</h2>
+                    <p>The homepage features a prominent hero banner, category shortcuts, featured products, and a newsletter signup.</p>
+                    <div class="wf-page">
+                        <div class="wf-title">Homepage — index.html</div>
+                        <div class="wf-full"><div class="wf-box wf-nav" style="height:36px">Top Bar | Logo + Nav Menu | Search</div></div>
+                        <div class="wf-full"><div class="wf-box wf-hero" style="height:120px">Hero Banner — Headline, Subheadline, CTA Button</div></div>
+                        <div class="wf-row">
+                            <div class="wf-col"><div class="wf-box" style="height:70px">Category Card — Dogs</div></div>
+                            <div class="wf-col"><div class="wf-box" style="height:70px">Category Card — Cats</div></div>
+                            <div class="wf-col"><div class="wf-box" style="height:70px">Category Card — Birds</div></div>
+                            <div class="wf-col"><div class="wf-box" style="height:70px">Category Card — Fish</div></div>
+                            <div class="wf-col"><div class="wf-box" style="height:70px">Category Card — Reptiles</div></div>
+                        </div>
+                        <p class="wf-label">Featured Products Grid (3-column)</p>
+                        <div class="wf-row">
+                            <div class="wf-col wf-card"><div class="wf-box" style="height:80px">Product Image</div><div class="wf-box" style="height:28px">Name / Price</div><div class="wf-box wf-btn" style="height:24px">Add to Cart</div></div>
+                            <div class="wf-col wf-card"><div class="wf-box" style="height:80px">Product Image</div><div class="wf-box" style="height:28px">Name / Price</div><div class="wf-box wf-btn" style="height:24px">Add to Cart</div></div>
+                            <div class="wf-col wf-card"><div class="wf-box" style="height:80px">Product Image</div><div class="wf-box" style="height:28px">Name / Price</div><div class="wf-box wf-btn" style="height:24px">Add to Cart</div></div>
+                        </div>
+                        <div class="wf-full" style="margin-top:8px"><div class="wf-box" style="height:50px">Newsletter Signup — Email Input + Subscribe Button</div></div>
+                        <div class="wf-full"><div class="wf-box wf-footer" style="height:60px">Footer — Quick Links | Customer Service | Social | Legal</div></div>
+                    </div>
+                </section>
+
+                <!-- ── 2. Products Listing ─────────────────────────── -->
+                <section aria-labelledby="wf-products">
+                    <h2 id="wf-products">2. Products Listing</h2>
+                    <p>The products page has a sidebar with category/filter controls and a main content area displaying product cards in a responsive grid.</p>
+                    <div class="wf-page">
+                        <div class="wf-title">Products — products.html</div>
+                        <div class="wf-full"><div class="wf-box wf-nav" style="height:36px">Top Bar | Logo + Nav | Search</div></div>
+                        <div class="wf-full"><div class="wf-box" style="height:30px">Breadcrumb: Home &gt; Shop</div></div>
+                        <div class="wf-full"><div class="wf-box wf-hero" style="height:60px">Page Hero — "Shop All Products"</div></div>
+                        <div class="wf-row" style="align-items:flex-start">
+                            <div class="wf-col wf-sidebar">
+                                <div class="wf-box" style="height:24px">Filter by Category</div>
+                                <div class="wf-box" style="height:100px">Category Checkboxes</div>
+                                <div class="wf-box" style="height:24px">Filter by Price</div>
+                                <div class="wf-box" style="height:50px">Price Range Slider</div>
+                                <div class="wf-box wf-btn" style="height:24px">Apply Filters</div>
+                            </div>
+                            <div class="wf-col wf-main">
+                                <div class="wf-box" style="height:24px">Sort By dropdown | Results count</div>
+                                <div class="wf-row">
+                                    <div class="wf-col wf-card"><div class="wf-box" style="height:70px">Img</div><div class="wf-box" style="height:22px">Name/Price</div><div class="wf-box wf-btn" style="height:20px">Add</div></div>
+                                    <div class="wf-col wf-card"><div class="wf-box" style="height:70px">Img</div><div class="wf-box" style="height:22px">Name/Price</div><div class="wf-box wf-btn" style="height:20px">Add</div></div>
+                                    <div class="wf-col wf-card"><div class="wf-box" style="height:70px">Img</div><div class="wf-box" style="height:22px">Name/Price</div><div class="wf-box wf-btn" style="height:20px">Add</div></div>
+                                </div>
+                                <div class="wf-box" style="height:28px; margin-top:8px">Pagination</div>
+                            </div>
+                        </div>
+                        <div class="wf-full"><div class="wf-box wf-footer" style="height:60px">Footer</div></div>
+                    </div>
+                </section>
+
+                <!-- ── 3. Product Detail ───────────────────────────── -->
+                <section aria-labelledby="wf-detail">
+                    <h2 id="wf-detail">3. Product Detail</h2>
+                    <p>The product detail page shows a large product image gallery, full description, specifications, price, quantity selector, and add-to-cart button.</p>
+                    <div class="wf-page">
+                        <div class="wf-title">Product Detail — product-detail-*.html</div>
+                        <div class="wf-full"><div class="wf-box wf-nav" style="height:36px">Top Bar | Logo + Nav | Search</div></div>
+                        <div class="wf-full"><div class="wf-box" style="height:30px">Breadcrumb: Home &gt; Shop &gt; Product Name</div></div>
+                        <div class="wf-row" style="align-items:flex-start">
+                            <div class="wf-col" style="flex:0 0 45%">
+                                <div class="wf-box" style="height:200px">Product Image (large)</div>
+                                <div class="wf-row">
+                                    <div class="wf-col"><div class="wf-box" style="height:50px">Thumb 1</div></div>
+                                    <div class="wf-col"><div class="wf-box" style="height:50px">Thumb 2</div></div>
+                                    <div class="wf-col"><div class="wf-box" style="height:50px">Thumb 3</div></div>
+                                </div>
+                            </div>
+                            <div class="wf-col">
+                                <div class="wf-box" style="height:28px">Product Name (H1)</div>
+                                <div class="wf-box" style="height:24px">Star Rating | Reviews count</div>
+                                <div class="wf-box" style="height:28px">Price</div>
+                                <div class="wf-box" style="height:80px">Short Description</div>
+                                <div class="wf-box" style="height:28px">Qty Selector</div>
+                                <div class="wf-box wf-btn" style="height:32px">Add to Cart</div>
+                                <div class="wf-box" style="height:50px">Key Features list</div>
+                            </div>
+                        </div>
+                        <div class="wf-full"><div class="wf-box" style="height:80px">Full Description / Tabs (Description | Specs | Reviews)</div></div>
+                        <div class="wf-full"><div class="wf-box" style="height:80px">Related Products</div></div>
+                        <div class="wf-full"><div class="wf-box wf-footer" style="height:60px">Footer</div></div>
+                    </div>
+                </section>
+
+                <!-- ── 4. Shopping Cart ────────────────────────────── -->
+                <section aria-labelledby="wf-cart">
+                    <h2 id="wf-cart">4. Shopping Cart</h2>
+                    <p>The cart page lists all added items with quantities and prices, plus an order summary sidebar with subtotal, shipping estimate, and checkout button.</p>
+                    <div class="wf-page">
+                        <div class="wf-title">Shopping Cart — cart.html</div>
+                        <div class="wf-full"><div class="wf-box wf-nav" style="height:36px">Top Bar | Logo + Nav | Search</div></div>
+                        <div class="wf-full"><div class="wf-box" style="height:30px">Breadcrumb: Home &gt; Cart</div></div>
+                        <div class="wf-full"><div class="wf-box wf-hero" style="height:50px">Page Hero — "Your Shopping Cart"</div></div>
+                        <div class="wf-row" style="align-items:flex-start">
+                            <div class="wf-col wf-main">
+                                <div class="wf-box" style="height:24px">Cart Table Header: Item | Qty | Price | Remove</div>
+                                <div class="wf-box wf-card" style="height:50px; margin-bottom:4px">Item row — Thumbnail | Name | Qty stepper | Price | ✕</div>
+                                <div class="wf-box wf-card" style="height:50px; margin-bottom:4px">Item row — Thumbnail | Name | Qty stepper | Price | ✕</div>
+                                <div class="wf-box wf-card" style="height:50px">Item row — Thumbnail | Name | Qty stepper | Price | ✕</div>
+                                <div class="wf-box wf-btn" style="height:24px; margin-top:8px">Continue Shopping</div>
+                            </div>
+                            <div class="wf-col wf-sidebar">
+                                <div class="wf-box" style="height:24px">Order Summary</div>
+                                <div class="wf-box" style="height:80px">Subtotal / Shipping / Tax / Total</div>
+                                <div class="wf-box" style="height:24px">Promo Code Input</div>
+                                <div class="wf-box wf-btn" style="height:28px">Proceed to Checkout</div>
+                            </div>
+                        </div>
+                        <div class="wf-full"><div class="wf-box wf-footer" style="height:60px">Footer</div></div>
+                    </div>
+                </section>
+
+                <!-- ── 5. Checkout ────────────────────────────────── -->
+                <section aria-labelledby="wf-checkout">
+                    <h2 id="wf-checkout">5. Checkout</h2>
+                    <p>The checkout page collects shipping and billing information in a multi-step form with a persistent order summary panel.</p>
+                    <div class="wf-page">
+                        <div class="wf-title">Checkout — checkout.html</div>
+                        <div class="wf-full"><div class="wf-box wf-nav" style="height:36px">Top Bar | Logo + Nav | Search</div></div>
+                        <div class="wf-full"><div class="wf-box" style="height:30px">Breadcrumb: Home &gt; Cart &gt; Checkout</div></div>
+                        <div class="wf-full"><div class="wf-box wf-hero" style="height:50px">Page Hero — "Checkout"</div></div>
+                        <div class="wf-row" style="align-items:flex-start">
+                            <div class="wf-col wf-main">
+                                <div class="wf-box" style="height:28px">Step Indicator: 1. Shipping  2. Payment  3. Review</div>
+                                <div class="wf-box" style="height:24px">Contact Info — Email / Phone</div>
+                                <div class="wf-box" style="height:100px">Shipping Address Form — Name, Address, City, State, ZIP, Country</div>
+                                <div class="wf-box" style="height:50px">Shipping Method — Standard / Express / Overnight</div>
+                                <div class="wf-box wf-btn" style="height:28px">Continue to Payment</div>
+                            </div>
+                            <div class="wf-col wf-sidebar">
+                                <div class="wf-box" style="height:24px">Order Summary</div>
+                                <div class="wf-box" style="height:110px">Item list with thumbnails and prices</div>
+                                <div class="wf-box" style="height:60px">Subtotal / Shipping / Total</div>
+                            </div>
+                        </div>
+                        <div class="wf-full"><div class="wf-box wf-footer" style="height:60px">Footer</div></div>
+                    </div>
+                </section>
+
+                <div class="info-box mt-3">
+                    <h4>Read more about the site design</h4>
+                    <p>See the <a href="concept.html">Conceptual Site Overview</a> for details about the site purpose, goals, and technology stack, or browse the <a href="sitemap.html">Sitemap</a> for all pages.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                        <span class="logo-text">Pet Supply <span>Plus</span></span>
+                        <span class="logo-tagline">Everything Your Pet Needs</span>
+                    </a>
+                    <p class="footer-desc">Your trusted source for premium pet supplies since 2005.</p>
+                    <div class="footer-social" aria-label="Social media links">
+                        <a href="#" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram">in</a>
+                        <a href="#" class="social-link" title="Follow us on Pinterest" aria-label="Pinterest">p</a>
+                        <a href="#" class="social-link" title="Subscribe to our YouTube channel" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="concept.html">Concept</a></li>
+                        <li><a href="wireframes.html">Wireframes</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="customer-service.html">Live Chat Support</a></li>
+                        <li><a href="order-status.html">Track My Order</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="faq.html">Returns &amp; Exchanges</a></li>
+                        <li><a href="faq.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p class="footer-newsletter-text">Get exclusive deals and pet care tips in your inbox.</p>
+                    <form class="footer-newsletter-form" action="#" method="post" aria-label="Footer newsletter signup">
+                        <label for="footer-email-wireframes" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email-wireframes" name="email" placeholder="Your email" required aria-required="true" autocomplete="email">
+                        <button type="submit" aria-label="Subscribe to newsletter">Go</button>
+                    </form>
+                    <ul class="footer-links footer-links-extra" role="list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pet Supply Plus. All Rights Reserved. | Last Updated: March 15, 2026</p>
+                <p>Contact: <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts">aroberts@petsupplyplus.com</a> | 📞 1-800-PET-PLUS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
