@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report | Pet Supply Plus — Everything Your Pet Needs</title>
+    <meta name="description" content="Project report documenting how the Pet Supply Plus website meets each of the 5 web design rubric requirements.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="top-bar-left">📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST</span>
+            <div class="top-bar-right">
+                <a href="order-status.html" title="Check your order status">Track Order</a>
+                <a href="customer-service.html" title="Contact customer service">Help</a>
+                <a href="cart.html" class="cart-icon-wrapper" title="View shopping cart">
+                    🛒 Cart <span class="cart-count" aria-label="3 items in cart">3</span>
+                </a>
+                <a href="#" title="Sign in or create an account">My Account</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                    <span class="logo-text">Pet Supply <span>Plus</span></span>
+                    <span class="logo-tagline">Everything Your Pet Needs</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list" id="nav-list" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="customer-service.html">Customer Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="report.html" aria-current="page">Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+        <div class="container">
+            <ol class="breadcrumb-list" role="list">
+                <li><a href="index.html" title="Go to Home page">Home</a></li>
+                <li><span class="current" aria-current="page">Project Report</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="page-hero">
+            <div class="container">
+                <h1>Project Report</h1>
+                <p>Documentation showing how Pet Supply Plus meets each web design rubric requirement.</p>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+
+                <div class="info-box">
+                    <h4>📸 Screenshots Required</h4>
+                    <p>The screenshot placeholders in this report require manually captured images. Open each page in your browser, take a screenshot, and save the file to the <code>screenshots/</code> folder using the filename shown under each placeholder. See <a href="screenshots/README.md">screenshots/README.md</a> for a full list of files to capture.</p>
+                </div>
+
+                <!-- Table of Contents -->
+                <section class="concept-section" aria-labelledby="report-toc">
+                    <h2 id="report-toc">Table of Contents</h2>
+                    <ol>
+                        <li><a href="#rubric-1">Conceptual Site Overview</a></li>
+                        <li><a href="#rubric-2">Wireframe Mockups</a></li>
+                        <li><a href="#rubric-3">Common Page Elements</a></li>
+                        <li><a href="#rubric-4">Working Site with All Pages Accessible (Min 10 Pages)</a></li>
+                        <li><a href="#rubric-5">CSS for All Formatting (No Inline Styles)</a></li>
+                    </ol>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 1: Conceptual Site Overview                          -->
+                <!-- ============================================================ -->
+                <section class="concept-section" aria-labelledby="rubric-1">
+                    <h2 id="rubric-1">1. Conceptual Site Overview</h2>
+
+                    <p>The Conceptual Site Overview is documented at <a href="concept.html">concept.html</a> and is accessible from the main navigation bar (Concept link) and from the footer Quick Links on every page of the site.</p>
+
+                    <h3>Purpose</h3>
+                    <p>Pet Supply Plus is a full-featured e-commerce website designed to provide pet owners with a convenient, trustworthy, and enjoyable online shopping experience. The site offers a wide selection of premium pet supplies covering dogs, cats, birds, fish, reptiles, and small animals — all in one place. The primary purpose is to replicate the feel of a professional retail pet supply store online, complete with product browsing, a shopping cart, checkout flow, customer service, and informational pages.</p>
+
+                    <h3>Target Audience</h3>
+                    <ul>
+                        <li><strong>Pet Owners:</strong> Individuals who own one or more pets and regularly purchase food, accessories, and care products.</li>
+                        <li><strong>New Pet Parents:</strong> First-time pet owners looking for guidance, starter kits, and essential supplies.</li>
+                        <li><strong>Gift Shoppers:</strong> People shopping for pet-related gifts for friends and family.</li>
+                        <li><strong>Veterinary Clients:</strong> Customers referred by vets seeking specific health or dietary products.</li>
+                    </ul>
+
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>Provide a seamless, end-to-end shopping experience from product discovery to order confirmation.</li>
+                        <li>Build customer trust through transparent policies, clear product information, and excellent customer service.</li>
+                        <li>Demonstrate modern web development best practices including semantic HTML, responsive CSS, and accessible design (WCAG 2.1).</li>
+                        <li>Offer a scalable page structure that could be connected to a real back-end or CMS in a production environment.</li>
+                        <li>Ensure fast load times and mobile-friendly layouts across all devices.</li>
+                    </ul>
+
+                    <h3>Site Structure</h3>
+                    <ul>
+                        <li><strong>Main Pages:</strong> Home, About, Contact, Sitemap, Concept, Wireframes, Report</li>
+                        <li><strong>Shopping:</strong> Products listing, individual product detail pages (12 products across 6 pet categories)</li>
+                        <li><strong>Cart &amp; Checkout:</strong> Shopping cart, checkout form, payment page, order confirmation, order status / tracking</li>
+                        <li><strong>Customer Service:</strong> Live chat support page, FAQ / Help Center, order tracking</li>
+                        <li><strong>Account:</strong> Customer account dashboard</li>
+                        <li><strong>Legal &amp; Policies:</strong> Privacy Policy, Terms &amp; Conditions</li>
+                    </ul>
+
+                    <h3>Technology Stack</h3>
+                    <table class="info-table" aria-label="Technology stack">
+                        <thead>
+                            <tr><th>Layer</th><th>Technology</th><th>Notes</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Markup</td><td>HTML5</td><td>Semantic elements, ARIA roles, accessible forms</td></tr>
+                            <tr><td>Styling</td><td>CSS3 (custom stylesheet)</td><td>Responsive grid, CSS variables, mobile-first</td></tr>
+                            <tr><td>Behaviour</td><td>Vanilla JavaScript</td><td>Nav toggle, cart counter, form validation</td></tr>
+                            <tr><td>Hosting</td><td>Static files</td><td>No server-side processing; ready for CDN deployment</td></tr>
+                            <tr><td>Accessibility</td><td>WCAG 2.1 AA</td><td>Skip nav, ARIA labels, colour contrast, keyboard nav</td></tr>
+                        </tbody>
+                    </table>
+
+                    <figure>
+                        <img src="screenshots/concept-page.png" alt="Screenshot of the Conceptual Site Overview page" loading="lazy">
+                        <figcaption>Fig 1 — The Conceptual Site Overview page (<a href="concept.html">concept.html</a>) accessible from the main navigation.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 2: Wireframe Mockups                                 -->
+                <!-- ============================================================ -->
+                <section class="concept-section" aria-labelledby="rubric-2">
+                    <h2 id="rubric-2">2. Wireframe Mockups</h2>
+
+                    <p>Wireframe mockups live at <a href="wireframes.html">wireframes.html</a> and are accessible from the main navigation bar (Wireframes link) and from the footer Quick Links on every page of the site.</p>
+
+                    <p>The page contains CSS-based wireframe diagrams for all major page layouts, built entirely with HTML and CSS — no image files or external tools required. Each wireframe uses a distinct set of custom CSS classes to simulate a structural layout diagram with labeled content regions.</p>
+
+                    <h3>Wireframes Provided</h3>
+                    <ul>
+                        <li>Homepage — hero banner, category grid, featured products, newsletter</li>
+                        <li>Products Listing — filter sidebar, product grid</li>
+                        <li>Product Detail — image, info panel, add-to-cart, reviews</li>
+                        <li>Shopping Cart — line items, order summary</li>
+                        <li>Checkout — shipping form, shipping method, order summary</li>
+                        <li>Payment — payment method selection, billing details</li>
+                        <li>Contact — contact form, company info</li>
+                        <li>About — company story, team grid, values, locations</li>
+                        <li>Customer Service — live chat interface</li>
+                        <li>FAQ / Help Center — accordion sections</li>
+                        <li>Order Status — tracking timeline</li>
+                        <li>Account Dashboard — profile summary, recent orders</li>
+                    </ul>
+
+                    <h3>Wireframe CSS Classes Used</h3>
+                    <p>Each wireframe diagram is rendered using custom CSS classes scoped to the wireframes page:</p>
+                    <pre><code>.wf-page      — outer page container
+.wf-box       — generic content block
+.wf-hero      — hero/banner region
+.wf-nav       — navigation bar region
+.wf-footer    — footer region
+.wf-sidebar   — sidebar column
+.wf-grid      — content grid area
+.wf-label     — text label inside a region</code></pre>
+
+                    <figure>
+                        <img src="screenshots/wireframes-page.png" alt="Screenshot of the Wireframe Mockups page showing layout diagrams" loading="lazy">
+                        <figcaption>Fig 2 — The Wireframe Mockups page (<a href="wireframes.html">wireframes.html</a>) showing CSS-based layout diagrams for all major pages.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 3: Common Page Elements                              -->
+                <!-- ============================================================ -->
+                <section class="concept-section" aria-labelledby="rubric-3">
+                    <h2 id="rubric-3">3. Common Page Elements</h2>
+
+                    <p>Every page on the Pet Supply Plus site shares a consistent set of structural and visual elements defined in <code>css/styles.css</code>. This ensures a unified user experience and brand identity throughout the site.</p>
+
+                    <h3>Top Bar</h3>
+                    <p>A slim utility bar above the header on every page provides quick access to key actions. It shows the store phone number on the left, and Track Order, Help, Cart, and My Account links on the right:</p>
+                    <pre><code>&lt;div class="top-bar"&gt;
+  &lt;div class="container"&gt;
+    &lt;span class="top-bar-left"&gt;📞 1-800-PET-PLUS (738-7587) | Mon–Fri 8am–8pm EST&lt;/span&gt;
+    &lt;div class="top-bar-right"&gt;
+      &lt;a href="order-status.html"&gt;Track Order&lt;/a&gt;
+      &lt;a href="customer-service.html"&gt;Help&lt;/a&gt;
+      &lt;a href="cart.html" class="cart-icon-wrapper"&gt;🛒 Cart &lt;span class="cart-count"&gt;3&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;My Account&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h3>Header &amp; Logo</h3>
+                    <p>The site header contains the brand logo "Pet Supply Plus" with tagline "Everything Your Pet Needs", always linked back to <code>index.html</code>. A hamburger nav-toggle button is included for mobile devices:</p>
+                    <pre><code>&lt;header class="site-header" role="banner"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="header-inner"&gt;
+      &lt;a href="index.html" class="site-logo" title="Pet Supply Plus — Home"&gt;
+        &lt;span class="logo-text"&gt;Pet Supply &lt;span&gt;Plus&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="logo-tagline"&gt;Everything Your Pet Needs&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;button class="nav-toggle" id="nav-toggle" aria-controls="nav-list"
+              aria-expanded="false" aria-label="Toggle navigation menu"&gt;...&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+
+                    <h3>Main Navigation</h3>
+                    <p>A consistent navigation bar with a teal background (<code>--color-secondary: #2AABB3</code>) appears below the header on every page with links to: Home, Shop, About, Customer Service, Contact, Concept, Wireframes, and Report:</p>
+                    <pre><code>&lt;nav class="main-nav" role="navigation" aria-label="Main navigation"&gt;
+  &lt;div class="container"&gt;
+    &lt;ul class="nav-list" id="nav-list" role="list"&gt;
+      &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="products.html"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="customer-service.html"&gt;Customer Service&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="concept.html"&gt;Concept&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="wireframes.html"&gt;Wireframes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="report.html"&gt;Report&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                    <h3>Breadcrumbs</h3>
+                    <p>All interior pages include a breadcrumb navigation trail immediately below the main nav, helping users understand their location within the site hierarchy. For example, the Checkout page shows: <em>Home &gt; Cart &gt; Checkout</em>:</p>
+                    <pre><code>&lt;nav class="breadcrumbs" aria-label="Breadcrumb navigation"&gt;
+  &lt;div class="container"&gt;
+    &lt;ol class="breadcrumb-list" role="list"&gt;
+      &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="cart.html"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="current" aria-current="page"&gt;Checkout&lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                    <h3>Footer</h3>
+                    <p>Every page ends with a 4-column footer grid containing: Footer Brand (logo, description, social links), Quick Links, Customer Service links, and Stay Connected (newsletter signup + legal links). A footer-bottom bar shows copyright and contact information:</p>
+                    <pre><code>&lt;footer class="site-footer" role="contentinfo"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="footer-grid"&gt;
+      &lt;div class="footer-brand"&gt;...logo, desc, social links...&lt;/div&gt;
+      &lt;div class="footer-col"&gt;&lt;h4&gt;Quick Links&lt;/h4&gt;...&lt;/div&gt;
+      &lt;div class="footer-col"&gt;&lt;h4&gt;Customer Service&lt;/h4&gt;...&lt;/div&gt;
+      &lt;div class="footer-col"&gt;&lt;h4&gt;Stay Connected&lt;/h4&gt;...newsletter form...&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="footer-bottom"&gt;...copyright...&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+
+                    <h3>Color Palette</h3>
+                    <p>All colors are defined as CSS custom properties in <code>css/styles.css</code> and referenced by class throughout every page — no hardcoded color values appear in the HTML:</p>
+                    <table class="info-table" aria-label="Color palette">
+                        <thead>
+                            <tr><th>Variable</th><th>Value</th><th>Usage</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><code>--color-primary</code></td><td><code>#1B3A5C</code></td><td>Dark navy — header top bar, headings, buttons</td></tr>
+                            <tr><td><code>--color-secondary</code></td><td><code>#2AABB3</code></td><td>Teal — navigation bar background, accent links</td></tr>
+                            <tr><td><code>--color-accent</code></td><td><code>#F5A623</code></td><td>Orange/gold — call-to-action buttons, badges</td></tr>
+                            <tr><td><code>--color-white</code></td><td><code>#FFFFFF</code></td><td>White — nav text, footer text on dark backgrounds</td></tr>
+                            <tr><td><code>--color-bg</code></td><td><code>#F5F5F5</code></td><td>Light grey — page background</td></tr>
+                            <tr><td><code>--color-text</code></td><td><code>#333333</code></td><td>Dark grey — body copy</td></tr>
+                            <tr><td><code>--color-text-light</code></td><td><code>#666666</code></td><td>Medium grey — secondary copy, captions</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Typography</h3>
+                    <p>The entire site uses a single font stack defined in the body selector: <code>font-family: Arial, Helvetica, sans-serif</code>. No external web fonts are loaded, keeping page load times minimal.</p>
+
+                    <h3>Images</h3>
+                    <p>Product images are sourced from Unsplash (royalty-free). Category icons use Unicode emoji characters (no image files required). All <code>&lt;img&gt;</code> elements include descriptive <code>alt</code> text for accessibility. Product images are lazy-loaded using the <code>loading="lazy"</code> attribute to improve initial page performance.</p>
+
+                    <figure>
+                        <img src="screenshots/common-header-nav.png" alt="Screenshot showing the consistent header, logo, and navigation bar" loading="lazy">
+                        <figcaption>Fig 3a — Consistent header with site logo, tagline, top utility bar, and teal navigation bar present on every page.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="screenshots/common-footer.png" alt="Screenshot showing the consistent footer across pages" loading="lazy">
+                        <figcaption>Fig 3b — Consistent 4-column footer with Quick Links, Customer Service, Stay Connected, and copyright bar present on every page.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="screenshots/common-breadcrumbs.png" alt="Screenshot showing breadcrumb navigation on an interior page" loading="lazy">
+                        <figcaption>Fig 3c — Breadcrumb navigation trail on an interior page helping users track their location within the site.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 4: Working Site – All Pages Accessible               -->
+                <!-- ============================================================ -->
+                <section class="concept-section" aria-labelledby="rubric-4">
+                    <h2 id="rubric-4">4. Working Site with All Pages Accessible (Min 10 Pages)</h2>
+
+                    <p>The Pet Supply Plus site contains <strong>29 HTML pages</strong> — well exceeding the 10-page minimum. Every page is accessible via at least one of: the main navigation bar, the footer Quick Links, the <a href="sitemap.html">Sitemap page</a>, or direct internal content links within pages.</p>
+
+                    <h3>Complete Page Inventory</h3>
+                    <table class="info-table" aria-label="Complete list of site pages">
+                        <thead>
+                            <tr><th>#</th><th>Filename</th><th>Page Title / Description</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td><a href="index.html">index.html</a></td><td>Homepage — hero banner, category grid, featured products, testimonials, newsletter</td></tr>
+                            <tr><td>2</td><td><a href="products.html">products.html</a></td><td>Products Listing — category filters and full product grid</td></tr>
+                            <tr><td>3</td><td><a href="about.html">about.html</a></td><td>About Us — company history, team, values, store locations</td></tr>
+                            <tr><td>4</td><td><a href="contact.html">contact.html</a></td><td>Contact — contact form and company contact information</td></tr>
+                            <tr><td>5</td><td><a href="customer-service.html">customer-service.html</a></td><td>Customer Service — live chat support page</td></tr>
+                            <tr><td>6</td><td><a href="faq.html">faq.html</a></td><td>FAQ / Help Center — accordion-style frequently asked questions</td></tr>
+                            <tr><td>7</td><td><a href="cart.html">cart.html</a></td><td>Shopping Cart — line items, quantities, and order summary</td></tr>
+                            <tr><td>8</td><td><a href="checkout.html">checkout.html</a></td><td>Checkout — shipping info form and shipping method selection</td></tr>
+                            <tr><td>9</td><td><a href="payment.html">payment.html</a></td><td>Payment — credit card, debit, and PayPal payment options</td></tr>
+                            <tr><td>10</td><td><a href="confirmation.html">confirmation.html</a></td><td>Order Confirmation — order success message and summary</td></tr>
+                            <tr><td>11</td><td><a href="order-status.html">order-status.html</a></td><td>Order Status — order tracking and delivery timeline</td></tr>
+                            <tr><td>12</td><td><a href="account.html">account.html</a></td><td>My Account — customer account dashboard</td></tr>
+                            <tr><td>13</td><td><a href="product-detail.html">product-detail.html</a></td><td>Product Detail — Premium Dog Food</td></tr>
+                            <tr><td>14</td><td><a href="product-detail-cat-toy.html">product-detail-cat-toy.html</a></td><td>Product Detail — Cat Toy Set</td></tr>
+                            <tr><td>15</td><td><a href="product-detail-bird-cage.html">product-detail-bird-cage.html</a></td><td>Product Detail — Bird Cage</td></tr>
+                            <tr><td>16</td><td><a href="product-detail-aquarium.html">product-detail-aquarium.html</a></td><td>Product Detail — Aquarium Kit</td></tr>
+                            <tr><td>17</td><td><a href="product-detail-dog-collar.html">product-detail-dog-collar.html</a></td><td>Product Detail — Dog Collar</td></tr>
+                            <tr><td>18</td><td><a href="product-detail-cat-tower.html">product-detail-cat-tower.html</a></td><td>Product Detail — Cat Tower</td></tr>
+                            <tr><td>19</td><td><a href="product-detail-fish-food.html">product-detail-fish-food.html</a></td><td>Product Detail — Fish Food</td></tr>
+                            <tr><td>20</td><td><a href="product-detail-grooming-kit.html">product-detail-grooming-kit.html</a></td><td>Product Detail — Grooming Kit</td></tr>
+                            <tr><td>21</td><td><a href="product-detail-hamster-wheel.html">product-detail-hamster-wheel.html</a></td><td>Product Detail — Hamster Wheel</td></tr>
+                            <tr><td>22</td><td><a href="product-detail-heat-lamp.html">product-detail-heat-lamp.html</a></td><td>Product Detail — Heat Lamp</td></tr>
+                            <tr><td>23</td><td><a href="product-detail-parrot-perch.html">product-detail-parrot-perch.html</a></td><td>Product Detail — Parrot Perch</td></tr>
+                            <tr><td>24</td><td><a href="product-detail-turtle-habitat.html">product-detail-turtle-habitat.html</a></td><td>Product Detail — Turtle Habitat</td></tr>
+                            <tr><td>25</td><td><a href="privacy.html">privacy.html</a></td><td>Privacy Policy</td></tr>
+                            <tr><td>26</td><td><a href="terms.html">terms.html</a></td><td>Terms &amp; Conditions</td></tr>
+                            <tr><td>27</td><td><a href="sitemap.html">sitemap.html</a></td><td>Site Map — full directory of all pages organised by section</td></tr>
+                            <tr><td>28</td><td><a href="concept.html">concept.html</a></td><td>Conceptual Site Overview — purpose, audience, goals, tech stack</td></tr>
+                            <tr><td>29</td><td><a href="report.html">report.html</a></td><td>Project Report — this page; rubric documentation</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>How All Pages Are Accessible</h3>
+                    <ul>
+                        <li><strong>Main Navigation Bar:</strong> Links to Home, Shop, About, Customer Service, Contact, Concept, Wireframes, and Report are visible on every page.</li>
+                        <li><strong>Footer Quick Links:</strong> Additional links to Home, Shop All Products, About Us, Contact Us, FAQ, Concept, Wireframes, Report, and Sitemap appear in the footer on every page.</li>
+                        <li><strong>Sitemap page (<a href="sitemap.html">sitemap.html</a>):</strong> A complete directory of all pages organised into sections — Main Pages, Shopping, Cart &amp; Checkout, Customer Service, Company Information, and Legal &amp; Policies.</li>
+                        <li><strong>Internal Content Links:</strong> Pages link to each other contextually — for example, the Cart page links to Checkout, Checkout to Payment, Payment to Confirmation, and product listing pages link to individual product detail pages.</li>
+                    </ul>
+
+                    <figure>
+                        <img src="screenshots/sitemap-page.png" alt="Screenshot of the Sitemap page showing all accessible pages" loading="lazy">
+                        <figcaption>Fig 4 — The Sitemap page (<a href="sitemap.html">sitemap.html</a>) listing all 29 pages organised by section.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 5: CSS for All Formatting                            -->
+                <!-- ============================================================ -->
+                <section class="concept-section" aria-labelledby="rubric-5">
+                    <h2 id="rubric-5">5. CSS for All Formatting (No Inline Styles)</h2>
+
+                    <p>All visual formatting across the entire Pet Supply Plus site is handled by a single external stylesheet: <code>css/styles.css</code>. Every HTML page links to this stylesheet in its <code>&lt;head&gt;</code> section:</p>
+                    <pre><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></pre>
+                    <p>No <code>style=""</code> inline attributes are used on any HTML element. The only exception is <code>wireframes.html</code>, which contains a page-scoped <code>&lt;style&gt;</code> block in the <code>&lt;head&gt;</code> to define the wireframe diagram helper classes — these are still not inline styles on HTML elements.</p>
+
+                    <h3>CSS Custom Properties (Design Tokens)</h3>
+                    <p>All design values (colors, spacing, typography, transitions) are defined as CSS custom properties in the <code>:root</code> selector at the top of <code>css/styles.css</code>:</p>
+                    <pre><code>:root {
+  --color-primary:    #1B3A5C;   /* dark navy blue */
+  --color-secondary:  #2AABB3;   /* teal */
+  --color-accent:     #F5A623;   /* orange/gold */
+  --color-white:      #FFFFFF;
+  --color-bg:         #F5F5F5;
+  --color-text:       #333333;
+  --color-text-light: #666666;
+  --container-max:    1200px;
+  --border-radius:    4px;
+  --transition:       0.3s ease;
+}</code></pre>
+
+                    <h3>Major CSS Sections</h3>
+                    <table class="info-table" aria-label="Major CSS sections in styles.css">
+                        <thead>
+                            <tr><th>CSS Section</th><th>Description</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Reset / Base</td><td>Box-sizing, body font, image responsiveness, link colors</td></tr>
+                            <tr><td>Skip Navigation</td><td>Accessible skip-to-content link (visible on keyboard focus)</td></tr>
+                            <tr><td>Container</td><td>Centred max-width wrapper (<code>--container-max: 1200px</code>)</td></tr>
+                            <tr><td>Top Bar</td><td>Utility strip with phone number and quick-action links</td></tr>
+                            <tr><td>Header</td><td>Sticky site header with logo and nav toggle button</td></tr>
+                            <tr><td>Navigation</td><td>Teal nav bar, horizontal link list, mobile hamburger menu</td></tr>
+                            <tr><td>Breadcrumbs</td><td>Ordered list with separator arrows, current-page styling</td></tr>
+                            <tr><td>Hero Banner</td><td>Full-width hero section with centered CTA content</td></tr>
+                            <tr><td>Page Hero</td><td>Interior page banner used on all non-homepage pages</td></tr>
+                            <tr><td>Sections</td><td>Alternating light/white section backgrounds</td></tr>
+                            <tr><td>Product Grid</td><td>Responsive CSS grid for product card layout</td></tr>
+                            <tr><td>Product Cards</td><td>Card styling — image, title, price, rating, add-to-cart button</td></tr>
+                            <tr><td>Category Grid</td><td>6-column category icon grid on homepage</td></tr>
+                            <tr><td>Testimonials</td><td>Customer review cards with star ratings</td></tr>
+                            <tr><td>Newsletter</td><td>Email signup form section styling</td></tr>
+                            <tr><td>Footer</td><td>4-column footer grid, footer-bottom bar</td></tr>
+                            <tr><td>Buttons</td><td>Base button, accent, primary, outline, and size variants</td></tr>
+                            <tr><td>Forms</td><td>Input, select, textarea styling; validation states</td></tr>
+                            <tr><td>Info Box / Table</td><td>Highlighted info boxes and data table styling</td></tr>
+                            <tr><td>Concept / Report Sections</td><td><code>.concept-section</code> used for bordered, padded content sections</td></tr>
+                            <tr><td>Responsive Media Queries</td><td>Mobile (&lt;768px), tablet (768–1024px), and desktop layouts</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Responsive Design</h3>
+                    <p>The CSS uses a mobile-first approach with three breakpoints. Navigation collapses to a hamburger menu on mobile, product grids stack to single columns, and the footer grid switches from 4 columns to a single column on small screens. All layout changes are handled entirely through CSS media queries — no JavaScript-driven style manipulation is used for layout.</p>
+
+                    <figure>
+                        <img src="screenshots/css-variables.png" alt="Screenshot of the CSS custom properties in styles.css" loading="lazy">
+                        <figcaption>Fig 5 — The <code>:root</code> CSS custom properties block at the top of <code>css/styles.css</code>, defining all site-wide design tokens.</figcaption>
+                    </figure>
+                </section>
+
+                <div class="info-box mt-3">
+                    <h4>Documentation Complete</h4>
+                    <p>This report covers all 5 rubric requirements. Browse the live site starting from the <a href="index.html">homepage</a> or view the full <a href="sitemap.html">sitemap</a> to navigate to any page.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" title="Pet Supply Plus — Home">
+                        <span class="logo-text">Pet Supply <span>Plus</span></span>
+                        <span class="logo-tagline">Everything Your Pet Needs</span>
+                    </a>
+                    <p class="footer-desc">Your trusted source for premium pet supplies since 2005.</p>
+                    <div class="footer-social" aria-label="Social media links">
+                        <a href="#" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter">t</a>
+                        <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram">in</a>
+                        <a href="#" class="social-link" title="Follow us on Pinterest" aria-label="Pinterest">p</a>
+                        <a href="#" class="social-link" title="Subscribe to our YouTube channel" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="concept.html">Concept</a></li>
+                        <li><a href="wireframes.html">Wireframes</a></li>
+                        <li><a href="report.html">Report</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="customer-service.html">Live Chat Support</a></li>
+                        <li><a href="order-status.html">Track My Order</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="faq.html">Returns &amp; Exchanges</a></li>
+                        <li><a href="faq.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p class="footer-newsletter-text">Get exclusive deals and pet care tips in your inbox.</p>
+                    <form class="footer-newsletter-form" action="#" method="post" aria-label="Footer newsletter signup">
+                        <label for="footer-email-report" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email-report" name="email" placeholder="Your email" required aria-required="true" autocomplete="email">
+                        <button type="submit" aria-label="Subscribe to newsletter">Go</button>
+                    </form>
+                    <ul class="footer-links footer-links-extra" role="list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pet Supply Plus. All Rights Reserved. | Last Updated: March 15, 2026</p>
+                <p>Contact: <a href="mailto:aroberts@petsupplyplus.com" title="Email Angela Roberts">aroberts@petsupplyplus.com</a> | 📞 1-800-PET-PLUS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
